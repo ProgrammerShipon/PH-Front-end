@@ -1,0 +1,92 @@
+# What are components in react ?
+   * Building Blocks of the user interface
+   * Each component exists in the same space but works independently.
+   * All of the components are being merged in a parent component (the final UI)
+   * Splits Ui into independent and reusable pieces
+   * accepts input called props (optional) and returns react element 
+   * Re-usable having their own structure and methods
+
+# Types of component 
+   * Similar in look, Different in data
+   * No common pattern, but breakdown for working purpose
+   * Container component 
+   * Stand-alone component 
+
+# Advantages of components 
+   * Code re-useability
+   * Fast development
+   * Design consistency
+   * Maintainability (update just one component & get result in all spaces related to this component)
+
+# SPA vs MPA
+   SPA => 
+    * Structure => One page
+    * Shareable links => One link for the whole website
+    * Loading => longer initial loading but after that each piece of content is instantly refreshed 
+    * Security => Needs more data protection on client side
+    * UI and UX => Looks and feels like a native app
+    * Offline mode =>  Works and feels like a native app 
+    * SEO Friendly => Not SEO friendly, but optimization can be improved
+    * Scalability => Difficult 
+   SPA => 
+    * Structure => Many pages
+    * Shareable links => Many links
+    * Loading => A bit quicker initial loading. but then the app reloads the whole page on each user's action which is time-consuming
+    * Security => Each page is protected on the server
+    * UI and UX =>  Must be adapted for mobile
+    * Offline mode => Does not work without the internet.
+    * SEO Friendly => Works with all search engines
+    * Scalability => Almost unlimited
+
+# Advantages of single page applications
+   * Linear navigation
+   * Instant loading 
+   * Offline mode 
+   * Native UX 
+   * Feature-rich UI
+   * Cross-platform adaptability Flexibility Quicker & cheaper development
+
+# Disadvantages of single page applications 
+   * SEO issues 
+   * Longer initial load time 
+   * No work under hight-loads
+   *  security issues
+   * Low scalability 
+   * Single Sharable link 
+   * JS settings dependency
+   * Poor navigation
+   * No history of visits
+   * Poor GA tracking
+
+# Cases where SPA is more suitable 
+   * Telling  a story about your product by  guiding a user from the top to the bottom of the screen ( Documentation)
+   * Building a small app that costs less to create a big app from it in the perspective
+   * Create an SPA as a temporary app while a highly time-consuming app is being developed 
+   * You use such promotion channels as targeted ads and direct links from social networks and don't rely heavily on SEO.  SPA is perfect for saas solutions, private communities, social networks 
+
+   # Live examples of SPA 
+    * Facebook news feed
+    * Twitter
+    * Trello
+    * Pinterest
+    * Gmail
+    * Google Maps
+    * Airbnb
+
+# Cases where MPA is more suitable
+   * You want to create a large online platform, offering a wide variety of products
+   * You need a lot of user interaction and technical features in you app 
+   * Seo is more important for your project 
+   # Live examples of MPA 
+      * Amazon 
+      * eBay
+      * Aliexpress
+      * Forbes
+      * Thumbtack
+      * Angi
+
+# Interview questions
+   * What are the components in react ?
+   * What do you mean by SPA ?
+   * Examples of SPAN, MPA ?
+   * What is the best between SPA and MPA ?
