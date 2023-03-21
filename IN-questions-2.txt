@@ -1,0 +1,68 @@
+1. JavaScript XML ( JSX )
+   JSX is a syntax extension for Javascript that lets you write HTML-like markup inside a JavaScript file .
+
+   # Rules you should know : 
+      * To return multiple elements from a component, wrap them with a single parent tag like , <div> </div> or <> </>
+      * "class" attribute becomes "className"
+      * Properties are written in camelCase. Example, onClick ->  onClick, tabIndex ---> tabIndex
+      * Tags must be closed: <h1> </h1>, <img />
+      
+2. Component ?
+   * Component are the foundation upon which you build user interfaces (UI)
+   * In a React app, every piece of UI is a component. 
+   * React component are regular javascript functions except: 
+    1) Their names always begin with a capital letter.
+    2) They return JSX markup .
+
+  # How to build a component ?
+    * Define and export the function 
+    * Add markup. For example: 
+      function User (props) {
+         return (
+            <div className={{border: '2px solid red', margin: '20px'}}>
+               <h3> Name: {props.name} </h3>
+               <p> Email: {props.email} </p>
+            </div>
+         )
+      }
+
+
+3. Props 
+   * React components use props to communicate with each other .
+   * Every parent component can pass some information to its child components by giving them props.
+   * You can pass any JavaScript value through props, including objects, arrays and functions. 
+
+
+4. useState
+   useState is a React Hook that lets you add a state variable to your component.
+
+   Syntax: 
+      const [state, setState] = useState(initialState)
+
+   useState returns an array with exactly two values:
+     * The current state. During the first render, it will match the initialState you have passed.
+     * The set function that lets you update the state to a different value and trigger a re-render 
+
+
+5. Event Handlers
+   In React, when an event handler update the state of a component, it triggers a re-render of the component and its children.
+      function Counter() {
+         const [count , setCount] = useState(45)
+
+         
+         const increaseCount = () => setCount(count + 1);
+         const decreseCount = () => setCount(count - 1);
+
+         return (
+            <div>
+               <h3> Count : {count} </h3>
+               <button onClick={increaseCount} > Increase </button>
+               <button onClick={decreseCount} > Increase </button>
+            </div>
+         )
+      }
+   ** The handleClick function updates the count state by calling the setCount function with a new value. This triggers a re-render of the component and updates the DOM to display the new count .
+
+6. useEffect
+   * the useEffect Hook allows you to perform side effects in your components. One example of side effects are: fetching data
+     useEffect ( callback, dependencies)
