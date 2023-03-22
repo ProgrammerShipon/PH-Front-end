@@ -1,0 +1,12 @@
+##** React JSX, Props, State, Hooks and Attribute vs Property
+
+# What is JSX ? 
+   * JavaScript XML - JSX
+   * JSX is a syntax extension for React JS 
+   * Easier to read and write 
+   * Gets transpiled to JavaScript with Babel
+
+# Rules of JSX 
+   * JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. this explains why you also can't return two jsx tags without wrapping them in to another tag <div> </div> or a Fragment <> </>.
+   * jsx requires tags to be explicitly closed: self-closing tags like <img/> must become <img/> , and wrapping tags must be written as 
+   <li> oranges </li>

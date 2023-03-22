@@ -1,39 +1,55 @@
-# What is Create React app ?
-   * Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React. It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production.
 
-# What is Vite ?
-   * Vite is a build tool and development server for modern web development projects, particularly for building and bundling JavaScript-based applications.
+#* ReactJS vs Angular 
+   # Templates -> 
+      * The template used by ReactJS is called 'JSX (Javascript XML) which combines the JavaScript code and markup in one line of code to create user interfaces efficiently. 
+      * Angular uses templates based on advance HTML, means you will need to learn the proper HTML syntax in order to be able to write code in Angular.
 
-   # Vite => 
-    * Created by Even you 
-    * Written in Go language
-    * Pre-bundles dependencies
-    * 10 to 100 times faster than Javascript-based bundlers
-    * Platform-agnostic: it can develop JS and TS apps with support for React , Svelte, Preact and Vanilla Js
+## Document Object Model -> 
+   * ReactJS maintains a virtual DOM which allows it to be lightning fast. 
+   * Angular has a regular DOM which updates the entire HTML structure every time a new change is made .
 
+# Components -> 
+   * ReactJS is a library for building and rendering components.
+   * Angular is not only about components, it offers more solutions that simply create components such as routing, state management, form validations, and other tools that you need to develop large applications.
 
-# CRA in development -> 
-   * Webpack is used as the entry point (index.js file) and create a tree from all the modules in the project 
-   * Transpile the code with Babel
-   * Bundles the code together
-   * Serves it with the Express web server
-   * Sets up sockets that will handle hot module replacement
- # A Significant  Drawback of CRA 
-   * Webpack repeats the bundling process every time there is a change in the code . Now think about the performance in large or complex project !!!
+# performance
+   * The virtual DOM feature of ReactJS allows its application to virtually update the changes without rewriting the entire HTML document, this renders updates much quicker.
+   * The regular DOM feature of Angular makes the application slow in performance, especially when compared to applications built using ReactJS .
 
+# Data binding -> 
+   * ReactJS supports unidirectional data binding, or what is commonly known as one-way data binding, means that data flows one way while synchronising the Model and View.
+   * Angular data binding model is bi-directional, meaning that there is a two-way flow of data between the Model and the View.
 
-# A Significant Advantage of Vite
-   * Doesn't rebuild and reload the entire page like CRA
-   * Uses route-based code-splitting & determines which part of the code needs to be loaded
-   * Uses the browser to parse the native ES modules from the app's entry point 
-  # Why Use Vite ?
-    * Superior performance 
-    * Extensive plugin compatibility
-    * Faster updates
-    * Faster build time 
+# Scalability -> 
+   * React applications requires you to rely on third party tools and supporting integrations external to ReactJS.
+   * Angular  includes additions tools like routing , state management, HTTPS, etc . which help you build large-scale apps, means it comes packed with all the core features that you may require. 
 
-# Why are we learning  CRA ?
-   * Although Vite is a newer and more advanced tool for building React projects. learning how to use Create React App ( CRA ) can still be valuables for a few reasons.
-      * Firstly, many companies and projects still use CRA, so being familiar with it can be useful in terms of collaborating with other developers and working on existing project 
-      * Secondly, by learning how to manually set up and configure a project . you can gain a better understanding of the underlying build tools and how they work .
-      * Lastly, the skills you learn from using CRA, such as setting up a development environment and managing dependencies , can be applied to a wid range of front-end development projects.
+# Learning curve
+   * ReactJS uses JSX (Javascript XML ), which is fairly easy to learn if you have prior experience with writing code in JavaScript.
+   * A beginner need to familarise with the Typescript language that Angular uses. He will also need to learn about all the rich topics that Angular comprises of , from components, templates, modules, and other basic concepts to the more complex ones like dependency injections, change detection, and RxJS 
+
+## When to use ReactJS 
+   # Pros 
+      * ReactJS has a simple design and uses JSX which makes it easy to learn and use, even for beginners.
+      * Owing to its virtual DOM, ReactJS offers fast performance for applications .
+      * Being a view library, React does not force on the specific architecture of your application.
+      * React allows you to tailor your stack as per your own project requirements by giving you the freedom to choose additional libraries.
+      * It is a more mature and older tool than Angular. Therefore, it has a larger user base along with wider community support.
+      * React is backed and supported by Facebook, which makes it a top choice for many leading businesses. see list of popular companies that use ReactJS below. 
+
+   # Cons 
+      * React is not a full-scale framework. Using React means you will have to use third-party community-managed modules for routing, state management, form validation, etc. when developing applications.
+      * React rolls out frequent updates, making it difficult to maintain the code and keep the documentation up-to-date .
+
+   # Props
+      * It offers all the features within its platform. Therefore, you do not need to use third-party community-managed modules.
+      * Angular CLI is a helpful feature to get you started with projects. It automates the development process, making every step easier for you. 
+      * Bi-directional data binding used by Angular keeps the data flow simple and easy.
+      * Angular offers extensive documentation and support to help you with all the necessary information .
+      * Angular is supported by Google, which makes it a trustworthy framework with potential for growth and innovation. A number of leading companies rely on Angular for their front-end development need, check out the list below .
+
+   # Cons
+      * You need to learn TypeScript and have a thorough knowledge of template syntax to be able to use Angular.
+      * Some of the Angular features such as dependency injections and RxJS are sophisticated and require a more professional approach to be implemented. Therefore, it has a steeper learning curve. 
+      * Applications built using Angular offer a comparatively slower performance due to the regular DOM used by Angular. 
+      
