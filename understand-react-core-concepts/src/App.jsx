@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Device from './components/Device/Device'
+import Watch from './components/Watch/Watch'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <div className="App">
+      <Device name='uphone' price='1300'></Device>
+      <Device name='Sumsing' price='1000' ></Device>
+      <Watch></Watch>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,7 +20,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vites + Reacts</h1>
+      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

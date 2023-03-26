@@ -1,0 +1,29 @@
+
+( If Document Object Model is so cool, then why Go with virtual DOM)
+
+#* What is Virtual DOM ?
+   # Virtual DOM -
+      * Lightweight copy of a DOM Object.
+      * Has properties the same as real DOM object. 
+      * Make changes in the DOM with the help of the Diff Algorithm
+      * It's like: instead of moving actual rooms in a house, you edit the blueprint.
+
+#* Virtual DOM vs Real DOM 
+   # Virtual DOM
+      * DOM manipulation is very easy 
+      * No memory wastage 
+      * It updates fast 
+      * It can't update HTML directly
+      * Update the JSX if the element update 
+      * It can produce about 200,000 Virtual DOM Nodes / Second 
+      * It is only a virtual representation of the DOM 
+
+   # Real DOM
+      * DOM manipulation is very expensive 
+      * There is too much memory wastage It updates slow
+      * It can directly update HTML
+      * Creates a new DOM if the element updates 
+      * It allows us to directly target any specific node ( HTML element )
+      * It represents the Ul of your application 
+   
+   #* ( Search -> React Fiber, component Lifecycle)
